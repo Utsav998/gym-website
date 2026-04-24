@@ -2,296 +2,276 @@
 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PowerFit Gym</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ICONS -->
+  <title>PowerFit Gym | Best Gym in Farakka</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="description" content="PowerFit Gym in Farakka offers modern fitness equipment, expert trainers, and affordable membership plans.">
+  <meta name="keywords" content="gym in Farakka, fitness center, personal trainer">
 
-<style>
-    .whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 28px;
-  padding: 15px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 1000;
-}
+  <link rel="stylesheet" href="css/style.css"> 
 
-.whatsapp:hover {
-  transform: scale(1.1);
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
-body{background:#0f0f0f;color:white;}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-/* HEADER */
-header{
-  text-align:center;
-  padding:20px;
-  background:linear-gradient(90deg,#e91e63,#ff5722);
-}
+  <!-- Icons -->
 
-/* NAV */
-nav{
-  background:#111;
-  padding:10px;
-  text-align:center;
-  position:sticky;top:0;
-}
-nav a{
-  color:white;margin:0 15px;text-decoration:none;font-weight:bold;
-}
-nav a:hover{color:#e91e63;}
-
-/* SLIDER */
-.slider{position:relative;height:80vh;overflow:hidden;}
-.slide{
-  position:absolute;width:100%;height:100%;
-  background-size:cover;background-position:center;
-  opacity:0;transition:1s;
-}
-.slide.active{opacity:1;}
-
-.quote{
-  position:absolute;bottom:20%;left:10%;
-  font-size:32px;font-weight:bold;
-}
-
-/* SECTION */
-.section{text-align:center;padding:60px 20px;}
-
-.grid{
-  display:flex;flex-wrap:wrap;gap:20px;
-  justify-content:center;margin-top:20px;
-}
-
-.card{
-  width:280px;background:#1a1a1a;
-  border-radius:10px;overflow:hidden;
-  box-shadow:0 0 15px rgba(233,30,99,0.4);
-  transition:0.3s;
-}
-.card img{width:100%;height:180px;object-fit:cover;}
-.card-content{padding:15px;}
-.card:hover{transform:translateY(-10px);}
-
-/* PRICING */
-.price{font-size:22px;color:#e91e63;font-weight:bold;}
-
-/* GAME */
-.game-box{
-  margin-top:20px;
-}
-#score{font-size:25px;color:#e91e63;}
-.game-btn{
-  margin-top:10px;
-  padding:10px 20px;
-  background:#e91e63;
-  border:none;color:white;
-  cursor:pointer;
-}
-
-/* FOOTER */
-footer{
-  background:#111;
-  text-align:center;
-  padding:20px;
-}
-
-.social i{
-  font-size:24px;
-  margin:10px;
-  cursor:pointer;
-}
-.social i:hover{color:#e91e63;}
-
-.counter{
-  margin-top:10px;
-  font-size:14px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  .quote{font-size:20px;}
-}
-</style>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-<h1>PowerFit Gym</h1>
-<p>Push Your Limits</p>
+<!-- HEADER -->
+
+<header class="header">
+  <h1>PowerFit Gym</h1>
+  <p>Push Your Limits</p>
 </header>
 
-<nav>
-<a href="#about">About</a>
-<a href="#training">Training</a>
-<a href="#pricing">Membership</a>
-<a href="#game">Game</a>
-<a href="#contact">Contact</a>
+<!-- NAV -->
+
+<nav class="nav">
+  <a href="#about">About</a>
+  <a href="#training">Training</a>
+  <a href="#trainers">Trainers</a>
+  <a href="#pricing">Membership</a>
+  <a href="#contact">Contact</a>
+  <a href="#gallery">Gallery</a>
 </nav>
 
 <!-- SLIDER -->
 
-<div class="slider">
-<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f')">
-<div class="quote">"No Pain No Gain"</div>
-</div>
-
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b')">
-<div class="quote">"Stay Strong"</div>
-</div>
-
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438')">
-<div class="quote">"Never Give Up"</div>
-</div>
-</div>
+<section class="slider">
+  <div class="slide active" style="background-image:url('images/slide1.webp')">
+    <div class="quote">No Pain No Gain</div>
+  </div>
+  <div class="slide" style="background-image:url('images/slide2.webp')">
+    <div class="quote">Stay Strong</div>
+  </div>
+  <div class="slide" style="background-image:url('images/slide3.webp')">
+    <div class="quote">Never Give Up</div>
+  </div>
+</section>
 
 <!-- ABOUT -->
 
 <section id="about" class="section">
-<h2>About Us</h2>
-<p style="max-width:700px;margin:auto;">
-PowerFit Gym provides world-class fitness training with expert trainers,
-modern equipment, and personalized workout plans.
-We focus on strength, discipline, and long-term health transformation.
-</p>
+  <h2>About Us</h2>
+  <p>
+    PowerFit Gym is a dedicated fitness center in Farakka focused on helping individuals
+    achieve strength, endurance, and confidence. With certified trainers and modern equipment,
+    we create a motivating environment for beginners and professionals alike.
+  </p>
 </section>
 
 <!-- TRAINING -->
 
 <section id="training" class="section">
-<h2>Train By Body Parts</h2>
+  <h2>Train By Body Parts</h2>
 
-<div class="grid">
+  <div class="grid">
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
-<div class="card-content"><h3>Chest</h3><p>Bench Press</p></div>
-</div>
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-dumbbell icon"></i>
+      <h3>Chest</h3>
+      <p><b>Exercise:</b> Bench Press</p>
+      <p>Builds upper body strength and chest size.</p>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
-<div class="card-content"><h3>Back</h3><p>Pull-ups</p></div>
-</div>
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-person-walking icon"></i>
+      <h3>Back</h3>
+      <p><b>Exercise:</b> Pull-ups</p>
+      <p>Improves posture and strengthens back muscles.</p>
+    </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b">
-<div class="card-content"><h3>Legs</h3><p>Squats</p></div>
-</div>
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-person-running icon"></i>
+      <h3>Legs</h3>
+      <p><b>Exercise:</b> Squats</p>
+      <p>Increases lower body strength and stability.</p>
+    </div>
 
-</div>
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-dumbbell icon"></i>
+      <h3>Shoulders</h3>
+      <p><b>Exercise:</b> Shoulder Press</p>
+      <p>Develops shoulder strength and endurance.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-hand-fist icon"></i>
+      <h3>Arms</h3>
+      <p><b>Exercise:</b> Bicep Curl</p>
+      <p>Enhances arm size and strength.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-fire icon"></i>
+      <h3>Abs</h3>
+      <p><b>Exercise:</b> Crunches</p>
+      <p>Strengthens core and improves balance.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-person-running icon"></i>
+      <h3>Glutes</h3>
+      <p><b>Exercise:</b> Hip Thrust</p>
+      <p>Builds lower body power and improves posture and athletic performance.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/chest.webp" alt="Chest workout" loading="lazy">
+      <i class="fas fa-heart-pulse icon"></i>
+      <h3>Cardio</h3>
+      <p><b>Exercise:</b> Treadmill Running</p>
+      <p>Improves heart health, stamina, and helps in fat loss.</p>
+    </div>
+
+  </div>
 </section>
 
-<!-- MEMBERSHIP -->
+<!-- TRAINERS -->
+
+<section id="trainers" class="section">
+  <h2>Meet Our Trainers</h2>
+
+  <div class="grid">
+
+<div class="card">
+  <img src="images/trainer1.webp" alt="Trainer Rahul" loading="lazy">
+  <h3>Rahul Sharma</h3>
+  <p>Strength Coach</p>
+</div>
+
+<div class="card">
+  <img src="images/trainer2.webp" alt="Trainer Amit" loading="lazy">
+  <h3>Amit Verma</h3>
+  <p>Fitness Trainer</p>
+</div>
+
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Gym Gallery</h2>
+
+  <div class="gallery">
+
+    <img src="images/gallery1.webp" alt="Gym interior" loading="lazy">
+    <img src="images/gallery2.webp" alt="Workout session" loading="lazy">
+    <img src="images/gallery3.webp" alt="Weight training" loading="lazy">
+    <img src="images/gallery4.webp" alt="Cardio area" loading="lazy">
+    <img src="images/gallery5.webp" alt="Gym equipment" loading="lazy">
+    <img src="images/gallery6.webp" alt="Fitness training" loading="lazy">
+
+  </div>
+</section>
+
+<!-- PRICING -->
 
 <section id="pricing" class="section">
-<h2>Membership Plans</h2>
+  <h2>Membership Plans</h2>
 
-<div class="grid">
+  <div class="grid">
 
 <div class="card">
-<div class="card-content">
-<h3>Basic</h3>
-<p class="price">₹999</p>
-<p>Gym Access</p>
-</div>
+  <h3>Basic</h3>
+  <p class="price">₹999 / month</p>
+  <p>Gym Access</p>
 </div>
 
 <div class="card">
-<div class="card-content">
-<h3>Standard</h3>
-<p class="price">₹1499</p>
-<p>Trainer Support</p>
-</div>
+  <h3>Standard</h3>
+  <p class="price">₹1499 / month</p>
+  <p>Trainer Support</p>
 </div>
 
 <div class="card">
-<div class="card-content">
-<h3>Premium</h3>
-<p class="price">₹1999</p>
-<p>Personal Training</p>
-</div>
+  <h3>Premium</h3>
+  <p class="price">₹1999 / month</p>
+  <p>Personal Training</p>
 </div>
 
-</div>
+  </div>
 </section>
 
-<!-- GAME -->
+<section id="timing" class="section">
+  <h2>Gym Timings</h2>
 
-<section id="game" class="section">
-<h2>💪 Fitness Challenge Game</h2>
+  <div class="grid">
 
-<div class="game-box">
-<p>Click the button as fast as you can!</p>
-<p id="score">0</p>
-<button class="game-btn" onclick="increaseScore()">Click Fast!</button>
-</div>
+    <div class="card">
+      <h3>Monday - Saturday</h3>
+      <p>Morning: 6:00 AM - 11:00 AM</p>
+      <p>Evening: 4:00 PM - 10:00 PM</p>
+    </div>
 
+    <div class="card">
+      <h3>Sunday</h3>
+      <p>Closed / Rest Day</p>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
 
 <section id="contact" class="section">
-<h2>Contact</h2>
-<p>📞 +91 9876543210</p>
-<p>📍 Your City</p>
+  <h2>Contact Us</h2>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+  </form>
+
+  <!-- MAP -->
+
+  <iframe 
+    src="https://www.google.com/maps?q=Farakka,West Bengal&output=embed"
+    width="100%" height="300" style="border:0;margin-top:20px;">
+  </iframe>
+
 </section>
 
 <!-- FOOTER -->
 
 <footer>
 
-<div class="social">
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
+  <div class="social">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
 
-<div class="counter">
-Visitors: <span id="visitCount">0</span>
-</div>
-
-<p>© 2026 PowerFit Gym</p>
+  <p>© 2026 PowerFit Gym</p>
 
 </footer>
 
-<!-- SCRIPTS -->
+<!-- WHATSAPP -->
 
-<script>
-/* SLIDER */
-let slides=document.querySelectorAll('.slide');
-let i=0;
-setInterval(()=>{
-slides[i].classList.remove('active');
-i=(i+1)%slides.length;
-slides[i].classList.add('active');
-},3000);
-
-/* GAME */
-let score=0;
-function increaseScore(){
-score++;
-document.getElementById('score').innerText=score;
-}
-
-/* VISITOR COUNTER */
-let count=localStorage.getItem('visits') || 0;
-count++;
-localStorage.setItem('visits',count);
-document.getElementById('visitCount').innerText=count;
-</script>
-
-<a href="https://wa.me/917488588752?text=Hi%20I%20want%20to%20join%20your%20gym" class="whatsapp" target="_blank">
+<a href="https://wa.me/919876543210" class="whatsapp" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+<script src="js/script.js" defer></script>
+
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
+
 </body>
 </html>
